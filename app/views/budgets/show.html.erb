@@ -10,5 +10,10 @@
   <%= @budget.amount %>
 </p>
 
+<p>
+  <strong>Spent:</strong>
+  <%= @budget.monthly_spend.spent %>
+</p>
+
 <%= link_to 'Edit', edit_budget_path(@budget) %> |
 <%= link_to 'Back', budgets_path %>
